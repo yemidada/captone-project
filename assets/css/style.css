@@ -30,7 +30,7 @@ a.active{
     border-color: #e91c23;
     background: #e91c23;
 }
-/* bc3a3c */
+
 body {
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
@@ -115,8 +115,6 @@ header .header-top  .container ul li a{
     -webkit-text-fill-color: black;
     background-clip: text;
     -webkit-background-clip: text;
-  
-    /* filter: invert(); */
 }
 
 .home-bg .container .schedule{
@@ -428,9 +426,5 @@ header .header-top  .container ul li a{
     .main-programme .container h4 {
         padding: 10px 0;
         font-size: 18px;
-    } 
-
-    /* .footer img{
-        padding-bottom: 0;
-    } */
+    }
 }
