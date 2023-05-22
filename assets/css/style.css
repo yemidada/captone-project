@@ -15,12 +15,12 @@ ul {
 }
 
 a.active {
-  color: #e91c23 !important;
+  color: #ec5242 !important;
 }
 
 .btn-outline-primary {
-  color: #e91c23;
-  border-color: #e91c23;
+  color: #ec5242;
+  border-color: #ec5242;
   border-radius: 0;
   border-width: 3px;
   font-size: 18px;
@@ -28,8 +28,8 @@ a.active {
 
 .btn-outline-primary:hover {
   color: #fff;
-  border-color: #e91c23;
-  background: #e91c23;
+  border-color: #ec5242;
+  background: #ec5242;
 }
 
 body {
@@ -55,7 +55,7 @@ body {
 }
 
 .footer_black {
-  background-color: #50b6ba;
+  background-color: #272a31;
   color: #fff;
 }
 
@@ -76,6 +76,10 @@ body {
   padding: 10px;
 }
 
+.about .container a {
+  color: #272a31 !important;
+}
+
 .popup-menu .popup-menu-item a {
   font-size: 32px;
   font-weight: 600;
@@ -94,8 +98,43 @@ body {
 }
 
 .about .container p a {
-  color: #e91c23;
+  color: #ec5242;
   font-weight: bold;
+}
+
+.about .decoration .one {
+  position: absolute;
+  left: 8%;
+  top: 200px;
+  -webkit-animation: spin 10s linear infinite;
+  -moz-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+}
+
+.about .decoration .two {
+  position: absolute;
+  right: 40px;
+  top: 200px;
+  -webkit-animation: animationtop 10s infinite;
+  animation: animationtop 10s infinite;
+}
+
+.about .decoration .three {
+  position: absolute;
+  left: 30%;
+  top: 40px;
+  z-index: 1;
+  -webkit-animation: animationtop 10s infinite;
+  animation: animationtop 10s infinite;
+}
+
+.about .decoration .four {
+  position: absolute;
+  right: 30%;
+  top: 40px;
+  z-index: 1;
+  -webkit-animation: animationtop 10s infinite;
+  animation: animationtop 10s infinite;
 }
 
 .logo .container p,
@@ -104,7 +143,7 @@ body {
 }
 
 header .header-top {
-  background-color: #00b9bc;
+  background-color: #272a31;
   color: #fff;
   padding: 10px;
 }
@@ -133,6 +172,7 @@ header .header-top .container ul li a {
 .home-bg {
   background: url('../images/banner2.jpg');
   background-size: cover;
+  position: relative;
 }
 
 .home-bg .banner {
@@ -142,6 +182,41 @@ header .header-top .container ul li a {
   justify-content: flex-start;
   height: 100%;
   mix-blend-mode: screen;
+}
+
+.home-bg .decoration .one {
+  position: absolute;
+  right: 8%;
+  top: 200px;
+  -webkit-animation: spin 10s linear infinite;
+  -moz-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+}
+
+.home-bg .decoration .two {
+  position: absolute;
+  right: 40px;
+  top: 200px;
+  -webkit-animation: animationtop 10s infinite;
+  animation: animationtop 10s infinite;
+}
+
+.home-bg .decoration .three {
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  z-index: 1;
+  -webkit-animation: animationtop 10s infinite;
+  animation: animationtop 10s infinite;
+}
+
+.home-bg .decoration .four {
+  position: absolute;
+  right: 30%;
+  top: 40px;
+  z-index: 1;
+  -webkit-animation: animationtop 10s infinite;
+  animation: animationtop 10s infinite;
 }
 
 .home-bg .container .intro {
@@ -171,7 +246,7 @@ header .header-top .container ul li a {
 }
 
 .section-title .divider {
-  background-color: #e91c23;
+  background-color: #ec5242;
   height: 5px;
   width: 60px;
   margin: 0 auto;
@@ -185,7 +260,7 @@ header .header-top .container ul li a {
 
 .main-programme .box {
   width: 100%;
-  background-color: #019b9e;
+  background-color: #272a31;
   text-align: center;
   margin-right: 5px;
   padding: 20px;
@@ -196,7 +271,7 @@ header .header-top .container ul li a {
 }
 
 .main-programme .container .box h4 {
-  color: #aecb54;
+  color: #ec5242;
   font-weight: bold;
 }
 
@@ -238,12 +313,12 @@ header .header-top .container ul li a {
 }
 
 .features .container .speaker .detail h6 {
-  color: #e91c23;
+  color: #ec5242;
   padding-bottom: 10px;
 }
 
 .partners {
-  background-color: #00b9bc;
+  background-color: #272a31;
   padding: 40px 0;
 }
 
@@ -264,6 +339,7 @@ header .header-top .container ul li a {
   text-align: center;
   justify-items: center;
   background-color: #f7f7f7;
+  position: relative;
 }
 
 .about .container .title {
@@ -333,7 +409,7 @@ header .header-top .container ul li a {
   left: 0;
   top: 0;
   z-index: 10000;
-  background-color: #e91c23;
+  background-color: #ec5242;
   width: 100%;
   height: 100%;
 }
@@ -354,6 +430,21 @@ header .header-top .container ul li a {
 
 .footer {
   padding: 80px 0;
+}
+
+@-moz-keyframes spin {
+  100% { -moz-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 @-webkit-keyframes animationtop {
@@ -396,6 +487,10 @@ header .header-top .container ul li a {
 @media only screen and (max-width: 768px) {
   body {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+
+  .about .decoration {
+    display: none;
   }
 
   .logo .container,
@@ -501,6 +596,10 @@ header .header-top .container ul li a {
   .logo .container,
   .summits .container {
     width: 60%;
+  }
+
+  .about .decoration {
+    display: block;
   }
 
   header .header-top .container {
