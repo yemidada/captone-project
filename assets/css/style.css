@@ -45,6 +45,7 @@ body {
 }
 
 .navbar {
+  background-color: #fff;
   padding: 30px;
   box-shadow: 0 8px 8px rgba(37.12, 47.22, 137.06, 0.08);
 }
@@ -53,7 +54,18 @@ body {
   object-fit: contain;
 }
 
+.footer_black {
+  background-color: #50b6ba;
+  color: #fff;
+}
+
 .navbar-nav li { padding-left: 40px; }
+
+.wp-caption img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .main-programme .box img {
   height: 80px;
@@ -79,6 +91,16 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
+}
+
+.about .container p a {
+  color: #e91c23;
+  font-weight: bold;
+}
+
+.logo .container p,
+.summits .container p {
+  padding-bottom: 30px;
 }
 
 header .header-top {
@@ -169,6 +191,10 @@ header .header-top .container ul li a {
   padding: 20px;
 }
 
+.main-programme .box:hover {
+  background-color: #497276;
+}
+
 .main-programme .container .box h4 {
   color: #aecb54;
   font-weight: bold;
@@ -232,6 +258,75 @@ header .header-top .container ul li a {
   flex-wrap: wrap;
 }
 
+.about {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  background-color: #f7f7f7;
+}
+
+.about .container .title {
+  padding-bottom: 50px;
+}
+
+.about .container .description {
+  background-color: #fff;
+  color: black;
+  border: 3px solid #eee;
+  margin: 0 auto;
+}
+
+.logo,
+.summits {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.logo .container,
+.summits .container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wp-caption {
+  position: relative;
+  padding: 0;
+  margin: 20px auto;
+}
+
+.wp-caption-text {
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  padding: 0.75em 1em;
+  font-weight: 700;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(188, 58, 60, 0.7);
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.wp-caption-text span {
+  font-size: 30px;
+}
+
+.wp-caption:hover .wp-caption-text {
+  background-color: rgb(66, 153, 157, 0.7);
+}
+
 .popup-menu {
   display: none;
   position: fixed;
@@ -239,9 +334,6 @@ header .header-top .container ul li a {
   top: 0;
   z-index: 10000;
   background-color: #e91c23;
-  mix-blend-mode: multiply;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
   width: 100%;
   height: 100%;
 }
@@ -302,6 +394,24 @@ header .header-top .container ul li a {
     mobile devices
 */
 @media only screen and (max-width: 768px) {
+  body {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+
+  .logo .container,
+  .summits .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .footer img {
+    padding-bottom: 20px;
+  }
+
+  .logo .container img {
+    width: 100%;
+  }
+
   .main-programme .container {
     display: grid;
     grid-template-columns: auto;
@@ -314,7 +424,7 @@ header .header-top .container ul li a {
   }
 
   .home-bg {
-    height: 90vh;
+    height: 600px;
   }
 
   .home-bg .container .intro {
@@ -335,10 +445,6 @@ header .header-top .container ul li a {
   .home-bg .container .schedule {
     padding-top: 20px;
     font-size: 30px;
-  }
-
-  .footer img {
-    padding-bottom: 20px;
   }
 
   .main-programme .container .box {
@@ -371,19 +477,39 @@ header .header-top .container ul li a {
   .features .container .speaker .pic img {
     height: 100px;
   }
+
+  .about {
+    padding: 16px;
+  }
+
+  .about .container .description {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+
+  .logo,
+  .summits {
+    padding: 16px;
+  }
 }
 
 /*
     desktop devices
 */
 @media all and (min-width: 768px) {
+  .logo .container,
+  .summits .container {
+    width: 60%;
+  }
+
   header .header-top .container {
     display: flex;
     justify-content: flex-end;
   }
 
   .home-bg {
-    height: 110vh;
+    height: 600px;
   }
 
   .home-bg .container .intro {
@@ -417,5 +543,20 @@ header .header-top .container ul li a {
   .main-programme .container h4 {
     padding: 10px 0;
     font-size: 18px;
+  }
+
+  .about {
+    padding: 80px;
+  }
+
+  .about .container .description {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+
+  .logo,
+  .summits {
+    padding: 60px;
   }
 }

@@ -49,25 +49,27 @@ const speakers = [
   },
 ];
 
-speakerDIV.innerHTML = '';
-for (let i = 0; i < speakers.length; i += 1) {
-  const speaker = speakers[i];
-  let html = '';
-  html += '<div class="speaker col-lg-6 col-sm-12">';
-  html
-    += '<img class="image" src="./assets/images/presenter_effect.png" /> <div class="d-flex ">';
-  html += '<div class="pic">';
-  html += `<img src="${speaker.image}"/>`;
-  html += '</div>';
-  html += '<div class="detail">';
-  html += `<h2>${speaker.name}</h2>`;
-  html += `<h6>${speaker.position}</h6>`;
-  html += `<p>${speaker.about}</p>`;
-  html += '</div>';
-  html += '</div>';
-  html += '</div>';
+if (speakerDIV != null) {
+  speakerDIV.innerHTML = '';
+  for (let i = 0; i < speakers.length; i += 1) {
+    const speaker = speakers[i];
+    let html = '';
+    html += '<div class="speaker col-lg-6 col-sm-12">';
+    html
+      += '<img class="image" src="./assets/images/presenter_effect.png" /> <div class="d-flex ">';
+    html += '<div class="pic">';
+    html += `<img src="${speaker.image}"/>`;
+    html += '</div>';
+    html += '<div class="detail">';
+    html += `<h2>${speaker.name}</h2>`;
+    html += `<h6>${speaker.position}</h6>`;
+    html += `<p>${speaker.about}</p>`;
+    html += '</div>';
+    html += '</div>';
+    html += '</div>';
 
-  speakerDIV.innerHTML += html;
+    speakerDIV.innerHTML += html;
+  }
 }
 
 mobileMenuBtn.addEventListener('click', () => {
