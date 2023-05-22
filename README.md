@@ -30,9 +30,9 @@
 
 **For this project, I created a website for a Global Impact Youth Summit. My objective is to develop a website that is responsive on both mobile and web platform.**
 
-Contact Form:
+Conference page:
 
-![screenshot](/assets/images/contact_form.png)
+![screenshot](/assets/images/conference_page.png)
 
 
 ## 🛠 Built With <a name="built-with"></a>
