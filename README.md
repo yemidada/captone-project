@@ -165,7 +165,7 @@ If you like this project you can support us  by sharing our code
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thanks you microverse for the opinion to opportunity
+Thanks you microverse for the opinion to opportunity. I also gives appropriate credit to <a href="https://www.behance.net/adagio07">Cindy Shin</a>  the <a href="https://www.behance.net/gallery/29845175/CC-Global-Summit-2015">author of the original design</a>, as required by the <a href="https://creativecommons.org/licenses/">Creative Commons License</a>.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
