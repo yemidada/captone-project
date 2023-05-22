@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>Portfolio: preserve data in the browser</b></h3>
+  <h3><b>Capstone Project - Global Impact Youth Summit </b></h3>
 
 </div>
 
@@ -26,9 +26,9 @@
 - [📝 License](#license)
 
 
-# 📖 Portfolio: preserve data in the browser <a name="about-project"></a>
+# 📖 Capstone Project - Global Impact Youth Summit  <a name="about-project"></a>
 
-**For this project, I established a repository for my portfolio website. My objective is to develop a complete portfolio website that is responsive on both mobile and web platform.**
+**For this project, I created a website for a Global Impact Youth Summit. My objective is to develop a website that is responsive on both mobile and web platform.**
 
 Contact Form:
 
@@ -49,23 +49,26 @@ The various stacks used for the project includes the following
 </details>
 
 <details>
+  <summary>Javascript</summary>
+</details>
+
+<details>
 <summary>Linters</summary>
 </details>
 
 
 ### Key Features <a name="key-features"></a>
 
-- **Learn how to translate a Figma design into a functional UI.**
 - **Utilize Flexbox to position various elements on a web page.**
 - **Utilize CSS Grid to arrange different elements on a web page.**
-- **Develop a portfolio website.**
-- **Develop a mobile popup menu and details popup window.**
+- **Use semantic HTML tags.**
+- **Develop a mobile popup menu.**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yemidada.github.io/desktop-version-portfolio/)
+- [Live Demo Link](https://yemidada.github.io/captone-project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,7 +111,7 @@ Clone this repository to your desired folder:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/yemidada/desktop-version-portfolio.git
+$ git clone https://github.com/yemidada/captone-project.git
 
 # Go into the repository
 $ cd desktop-version-portfolio
@@ -143,7 +146,7 @@ After you clone this repo to your desktop, go to its root directory and run `npm
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **Add animation effect to the css (Animate.css)**
+- [ ] **Add other pages to the design)**
 - [ ] **Improve the designs**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
