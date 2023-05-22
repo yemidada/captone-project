@@ -489,6 +489,7 @@ header .header-top .container ul li a {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   }
 
+  .home-bg .decoration,
   .about .decoration {
     display: none;
   }
@@ -598,6 +599,7 @@ header .header-top .container ul li a {
     width: 60%;
   }
 
+  .home-bg .decoration,
   .about .decoration {
     display: block;
   }
