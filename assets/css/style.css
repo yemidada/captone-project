@@ -142,6 +142,16 @@ body {
   padding-bottom: 30px;
 }
 
+.navigation .container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation .container ul li {
+  margin-left: 12px;
+}
+
 header .header-top {
   background-color: #272a31;
   color: #fff;
@@ -240,6 +250,38 @@ header .header-top .container ul li a {
 .home-bg .container .schedule {
   color: black;
 }
+
+.navigation {
+  padding-top: 20px;
+}
+
+.navigation .container {
+  margin-bottom: 24px;
+  display: flex;
+  align-self: center;
+}
+
+.navigation .container ul li + li {
+  content: " ";
+  background: url('../images/navigator.svg');
+  background-repeat: no-repeat;
+  background-position-y: 3px;
+  background-position-x: 1%;
+  padding-left: 25px;
+  margin-top: 5px;
+}
+
+/* .navigation .container span {
+  margin-left: 12px;
+} */
+
+/* .navigation .container .dotted {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: rgb(193, 199, 208);
+  border-radius: 9999px;
+} */
 
 .section-title {
   padding-bottom: 20px;
@@ -514,6 +556,10 @@ header .header-top .container ul li a {
     gap: 10px;
   }
 
+  .navigation .container {
+    justify-content: center;
+  }
+
   header .header-top .container {
     display: flex;
     justify-content: center;
@@ -602,6 +648,10 @@ header .header-top .container ul li a {
   .home-bg .decoration,
   .about .decoration {
     display: block;
+  }
+
+  .navigation .container {
+    justify-content: flex-end;
   }
 
   header .header-top .container {
