@@ -260,14 +260,14 @@ header .header-top .container ul li a {
 
 .main-programme .box {
   width: 100%;
-  background-color: #272a31;
+  background-color: #3d3f45;
   text-align: center;
   margin-right: 5px;
   padding: 20px;
 }
 
 .main-programme .box:hover {
-  background-color: #497276;
+  background-color: #6f7072;
 }
 
 .main-programme .container .box h4 {
