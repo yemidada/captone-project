@@ -125,7 +125,8 @@ popupMenuUl.forEach((menu) => {
 if (speakerDIV != null) {
   loadSpeakers();
   showMoreDIV.innerHTML = 'Less <img src="./assets/images/up-arrow.png" />';
-  showMoreDIV.addEventListener('click', () => {
+  showMoreDIV.addEventListener('click', (e) => {
+    e.preventDefault();
     if (isMore) {
       loadSpeakers();
       isMore = false;
