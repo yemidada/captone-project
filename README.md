@@ -165,8 +165,7 @@ If you like this project you can support us  by sharing our code
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thanks you microverse for the opinion to opportunity. I also gives appropriate credit to <a href="https://www.behance.net/adagio07">Cindy Shin</a>  the <a href="https://www.behance.net/gallery/29845175/CC-Global-Summit-2015">author of the original design</a>. Credit also goes to <a href="https://www.pexels.com/">Pixels</a> and <a href="flaticon.com/">Flaticons</a> for the images and icons respectively.
-
+I would like to express my gratitude to microverse for providing me with the chance to voice my opinion and turn it into an opportunity. Additionally, I would like to give proper recognition to <a href="https://www.behance.net/adagio07">Cindy Shin</a, the <a href="https://www.behance.net/gallery/29845175/CC-Global-Summit-2015">author of the original design</a>talented author of the original design</a>. Furthermore, credit is due to <a href="https://www.pexels.com/">Pixels</a> and <a href="flaticon.com/">Flaticons</a> for providing the captivating images and icons, respectively.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
