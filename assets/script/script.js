@@ -124,16 +124,16 @@ popupMenuUl.forEach((menu) => {
 
 if (speakerDIV != null) {
   loadSpeakers();
-  showMoreDIV.innerHTML = 'Less';
+  showMoreDIV.innerHTML = 'Less <img src="./assets/images/up-arrow.png" />';
   showMoreDIV.addEventListener('click', () => {
     if (isMore) {
       loadSpeakers();
       isMore = false;
-      showMoreDIV.innerHTML = 'Less';
+      showMoreDIV.innerHTML = 'Less <img src="./assets/images/up-arrow.png" />';
     } else {
       loadSpeakers(3);
       isMore = true;
-      showMoreDIV.innerHTML = 'More';
+      showMoreDIV.innerHTML = 'More <img src="./assets/images/down-arrow.png" />';
     }
   });
 }

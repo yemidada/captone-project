@@ -32,10 +32,12 @@ a.active {
   background: #ec5242;
 }
 
-#show-more {
+#show-more,
+#show-more:hover {
   border: 1px solid #999;
   color: #333;
   padding: 15px 0;
+  background: #fff;
 }
 
 body {
