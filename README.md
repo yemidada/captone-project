@@ -141,7 +141,7 @@ After you clone this repo to your desktop, go to its root directory and run `npm
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **Add other pages to the design)**
+- [ ] **Add other pages to the design**
 - [ ] **Improve the designs**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
