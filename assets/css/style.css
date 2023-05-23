@@ -32,6 +32,12 @@ a.active {
   background: #ec5242;
 }
 
+#show-more {
+  border: 1px solid #999;
+  color: #333;
+  padding: 15px 0;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;

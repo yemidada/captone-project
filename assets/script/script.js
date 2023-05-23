@@ -1,8 +1,9 @@
 const speakerDIV = document.querySelector('#speakers');
+const showMoreDIV = document.querySelector('#show-more');
 const mobileMenuBtn = document.querySelector('#mobile-menu-btn');
 const popupCloseBtn = document.querySelector('#popup-close-btn');
 const popupMenuUl = document.querySelectorAll('.popup-menu ul li');
-
+let isMore = false;
 const speakers = [
   {
     name: 'Gbenga Omolokun',
@@ -49,6 +50,32 @@ const speakers = [
   },
 ];
 
+function loadSpeakers(limit = 6) {
+  speakerDIV.innerHTML = '';
+  for (let i = 0; i < speakers.length; i += 1) {
+    const speaker = speakers[i];
+    let html = '';
+    html += '<div class="speaker col-lg-6 col-sm-12">';
+    html
+      += '<img class="image" src="./assets/images/presenter_effect.png" /> <div class="d-flex ">';
+    html += '<div class="pic">';
+    html += `<img src="${speaker.image}"/>`;
+    html += '</div>';
+    html += '<div class="detail">';
+    html += `<h2>${speaker.name}</h2>`;
+    html += `<h6>${speaker.position}</h6>`;
+    html += `<p>${speaker.about}</p>`;
+    html += '</div>';
+    html += '</div>';
+    html += '</div>';
+
+    speakerDIV.innerHTML += html;
+    if ((i + 1) === limit) {
+      break;
+    }
+  }
+}
+
 if (speakerDIV != null) {
   speakerDIV.innerHTML = '';
   for (let i = 0; i < speakers.length; i += 1) {
@@ -94,3 +121,19 @@ popupMenuUl.forEach((menu) => {
     }
   });
 });
+
+if (speakerDIV != null) {
+  loadSpeakers();
+  showMoreDIV.innerHTML = 'Less';
+  showMoreDIV.addEventListener('click', () => {
+    if (isMore) {
+      loadSpeakers();
+      isMore = false;
+      showMoreDIV.innerHTML = 'Less';
+    } else {
+      loadSpeakers(3);
+      isMore = true;
+      showMoreDIV.innerHTML = 'More';
+    }
+  });
+}
